@@ -36,6 +36,59 @@ p {
   width: 100%;
 }
 
+button {
+  margin-top: 20px;
+  cursor: pointer;
+  border: none;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0 25px;
+  line-height: 40px;
+  font-weight: 500;
+  border: 1px solid black;
+  transition: 0.2s ease all;
+}
+
+.btn-sm {
+  line-height: 33px;
+}
+
+.btn-lg {
+  line-height: 45px;
+}
+
+.btn-primary {
+  background-color: #1367ef;
+  color: white;
+  border-color: #1367ef;
+}
+
+.btn-primary:hover {
+  background-color: white;
+  color: #1367ef;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"] {
+  outline: none;
+  padding: 8px 8px 8px 15px;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus {
+  border-color: gray;
+}
+
+input[type="number"]::-webkit-inner-spin-button {
+  opacity: 0;
+}
+
 /* BASE END */
 
 /* HEADER START */
@@ -175,7 +228,6 @@ header .menu-dropdown-wrapper {
   opacity: 0;
   visibility: hidden;
   transition: all 0.2s ease;
-  background-color: #fff;
 }
 
 header .menu-dropdown-content {
@@ -203,7 +255,6 @@ header .menu-dropdown-content a:hover {
 
 .menu-dropdown-megamenu {
   border: 1px solid #dee0ea;
-  border-top: none;
   background-color: white;
   padding: 22px;
   display: flex;
@@ -251,7 +302,6 @@ header .menu-dropdown-content a:hover {
 }
 
 .megamenu-wrapper .menu-dropdown-wrapper {
-  top: calc(100% + 1px) !important;
   left: 0;
   width: 100%;
   display: flex;
