@@ -122,6 +122,16 @@ header {
   align-items: center;
 }
 
+.header-mobile {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.header-center .bi-x-circle {
+  display: none;
+}
+
 .header-left .logo {
   font-size: 24px;
   font-weight: 500;
@@ -329,6 +339,7 @@ header .menu-dropdown-content a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+  display: none; /* TODO */
 }
 
 .modal-search::after {
@@ -473,3 +484,101 @@ header .menu-dropdown-content a:hover {
 }
 
 /* Search Modal End*/
+
+/* ? media container start */
+
+@media (max-width: 1200px) {
+  .container {
+    max-width: 992px;
+  }
+}
+
+@media (max-width: 992px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 576px;
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    max-width: 420px;
+  }
+}
+
+@media (max-width: 420px) {
+  .container {
+    max-width: 350px;
+  }
+}
+/* ? media container end */
+
+/* ? header responsive start */
+
+@media (max-width: 650px) {
+  header .header-center {
+    display: none; /* TODO */
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    padding: 50px 75px;
+    height: 100vh;
+    border-right: 1px solid #dee0ea;
+  }
+
+  .header-center .menu {
+    flex-direction: column;
+  }
+
+  .header-center .menu a {
+    font-size: 16px !important;
+  }
+
+  .header-center .menu a i {
+    display: none;
+  }
+
+  .header-center .bi-x-circle {
+    font-size: 20px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: inline-block;
+  }
+
+  .header-center .menu-dropdown-wrapper {
+    display: none;
+  }
+
+  header .header-mobile {
+    display: inline-block;
+  }
+}
+
+/* ? header responsive end */
+
+/* ? search modal responsive start */
+
+@media (max-width: 992px) {
+  .modal-search .modal-wrapper {
+    max-width: 640px;
+  }
+}
+
+@media (max-width: 640px) {
+  .modal-search .modal-wrapper {
+    max-width: 370px;
+  }
+
+  .modal-search .search-results-list {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+/* ? search modal responsive end */
