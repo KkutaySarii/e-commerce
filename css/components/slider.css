@@ -27,6 +27,7 @@
 
 .slider {
   position: relative;
+  z-index: -1;
 }
 
 .slider .slider-buttons {
@@ -87,7 +88,7 @@
 
 /* responsive */
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .slider-item {
     height: calc(100vh - 154px);
   }
