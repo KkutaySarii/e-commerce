@@ -26,10 +26,22 @@
 
 /* products start */
 
+.products {
+  margin-bottom: 40px;
+}
+
 .products .products-list {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
 }
-
 /* products end */
+
+/* campaigns start */
+.campaigns .campaigns-wrapper {
+  display: flex;
+  gap: 30px;
+  margin: 30px 0;
+  flex-wrap: wrap;
+}
+/* campaigns end */
