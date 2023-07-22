@@ -90,6 +90,7 @@
 .policy .policy-list {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  padding: 25px 0;
 }
 
 .policy-list .policy-item {
@@ -105,6 +106,7 @@
 
 .policy-list .policy-item i {
   font-size: 50px;
+  display: flex;
 }
 
 .policy-list .policy-item .policy-texts strong {

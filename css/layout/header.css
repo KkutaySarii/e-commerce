@@ -94,6 +94,11 @@ header {
   display: flex;
 }
 
+.header-right .header-right-links .active {
+  color: #1367ef;
+  opacity: 0.8;
+}
+
 .header-right-links .header-search {
   border: none;
   background-color: transparent;
