@@ -38,12 +38,6 @@ header {
   display: none;
 }
 
-.header-left .logo {
-  font-size: 24px;
-  font-weight: 500;
-  display: flex;
-}
-
 .header-center .navigation .menu {
   display: flex;
   column-gap: 30px;

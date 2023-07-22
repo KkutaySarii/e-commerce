@@ -45,6 +45,12 @@ button {
   border: none;
 }
 
+.logo {
+  font-size: 24px;
+  font-weight: 500;
+  display: flex;
+}
+
 .btn {
   display: inline-block;
   padding: 0 25px;
