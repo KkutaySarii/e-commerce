@@ -56,16 +56,11 @@ header {
   font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 1.2px;
+  position: relative;
 }
 
 .header-center .menu .menu-item:hover .menu-link::after {
   width: 100%;
-}
-
-.header-center .menu .menu-item .menu-link {
-  position: relative;
-  display: flex;
-  align-items: center;
 }
 
 .header-center .menu .menu-item .menu-link.active::after {
